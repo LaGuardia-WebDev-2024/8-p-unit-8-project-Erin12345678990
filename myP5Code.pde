@@ -8,24 +8,20 @@ setup = function() {
     drawButterfly(198,329);
     drawButterfly(400,230);
 
-   drawFlower(198,370);
-   drawFlower(200,290);
-   drawFlower(90,210);
-   drawFlower(475,320);
-   drawFlower(400,370);
-
    drawHorse(400,300);
 };
 
 //🟢draw Function - will run on repeat
 draw = function(){
-
 };
+
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 
+drawFlower(mouseX,mouseY);
 }
+
 //draws Butterfly yay!#1
 var drawButterfly = function(flyX,flyY){
   textSize(30);
@@ -33,14 +29,12 @@ var drawButterfly = function(flyX,flyY){
 }
 
 //flower#2
-
-var drawFlower = function(flowerX,flowerY){
+var drawFlower = function(mouseX,mouseY){
   textSize(20);
-  text("🌷", flowerX,flowerY);
+  text("🌷", mouseX,mouseY);
 }
 
 //and a unicorn for some reason #3
-
 var drawHorse = function(horseX,horseY){
   textSize(70);
   text("🦄",horseX,horseY);
